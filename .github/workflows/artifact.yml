@@ -27,14 +27,11 @@ jobs:
        uses: actions/download-artifact@v5
        with:
          name: hello-artifact
-
-    -  name: store artifact
-       run: |
-         mkdir -p artifacts
-         mv hello.txt artifacts/hello.txt
+         path: artifacts
 
     -  name: Display file content
        run: cat ./artifacts/hello.txt
+
 
 
 
