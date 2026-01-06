@@ -28,6 +28,10 @@ jobs:
        with:
          name: hello-artifact
 
+    -  name: store artifact
+       run: mv hello.txt artifact/hello.txt
+
     -  name: Display file content
        run: cat ./artifacts/hello.txt
+
 
